@@ -2,23 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Helmet } from 'react-helmet';
-// Modular CSS
-import "modular-css/css/modular.css";
-import "modular-css/css/modular-css.font.css";
-import { ModularCSSfonstRequired } from 'modular-css';
-// Favicon
-import Favicon from './img/isologo.png';
+// Apollo 
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from '@apollo/react-hooks';
+
+const client = new ApolloClient({
+  uri: 'http://localhost:3100'
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <Helmet>
-      <title>GraphQL Message App</title>
-      <link rel="icon" href={Favicon} />
-      <meta name="theme-color" content="#191919" />
-      <link href={ModularCSSfonstRequired} rel="stylesheet" />
-    </Helmet>
-    <App />
+    <ApolloProvider client={ client }>
+
+      <App />
+      
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
