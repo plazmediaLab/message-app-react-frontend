@@ -1,0 +1,38 @@
+
+body{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+/* ------  ----- */
+.nav-link:hover{
+    color: var(--skyblue-light-1)!important;
+}
+.nav-link.select{
+    color: var(--skyblue)!important;
+}
+.navbar-logo{
+    color: var(--graphine);
+}
+.txt-300,
+.txt-300-i{
+    font-weight: 300;
+}
+.txt-300-i{
+    font-style: italic;
+}
+.txt-400,
+.txt-400-i{
+    font-weight: 400;
+}
+.txt-400-i{
+    font-style: italic;
+}
+.txt-500{
+    font-weight: 500; 
+}
+.txt-bold{
+    font-weight: 700;
+}
+.txt-900{
+    font-weight: 900; 
+}

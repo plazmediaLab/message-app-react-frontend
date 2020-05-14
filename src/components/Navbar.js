@@ -8,7 +8,7 @@ const Navbar = () => {
   const ActiveLink = props => {
     const [isActive] = useRoute(props.href);
     return (
-      <Link {...props} className={isActive ? "nav-link select dial" : "nav-link"}>
+      <Link {...props} className={isActive ? "nav-link select cord-50" : "nav-link"}>
         {props.children}
       </Link>
     );
@@ -16,9 +16,9 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="navbar-component box-shadow-micro mb-4" id="navbar_1">
-        <Link className="navbar-logo" to="/" title="Home page name">
-          MessageLIST
+      <nav className="navbar-component box-shadow-micro" id="navbar_1">
+        <Link className="navbar-logo txt-300" to="/" title="Home page name">
+          Message<span className="txt-500">LIST</span>
         </Link>
         <div className="navbar-toggle">
           <button type="button" className="btn-toggle">

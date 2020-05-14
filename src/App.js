@@ -12,8 +12,12 @@ function App() {
      
       <Navbar />
 
-      <Route path="/" component={MessageList} />
-      <Route path="/new-message" component={MessageForm} />
+      <main className="container vm-3">
+
+        <Route path="/" component={MessageList} />
+        <Route path="/new-message" component={MessageForm} />
+
+      </main>
 
     </Fragment>
   );
